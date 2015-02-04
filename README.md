@@ -47,7 +47,7 @@ Sprite Class
 * get_position(sprite) __// returns [current x, current y]__
 * get_rectangle(sprite) __// returns [current x, current y, width, height]__ 
 * collision(sprite1, sprite2) __// returns if collision has occurred between 2 sprites__
-* set_y(sprite, y) __// the y-dimension is flipped, window.height - get_mouse_y() to flip it correctly__
+* set_y(sprite, y) __// the y-dimension is flipped, window.height - y to flip it correctly__
 * set_x(sprite, x)
 * properties
     - window
