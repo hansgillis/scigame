@@ -20,10 +20,6 @@ function self = Image(pathfile, position)
 								"position", position); 
 endfunction
 
-function image = load_image(pathfile, position)
-   	image = Image(pathfile, position);
-endfunction 
-
 function blit(window, img, position)
 	x = position(1);
 	y = window.height - position(2);

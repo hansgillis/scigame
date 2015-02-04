@@ -1,5 +1,5 @@
 // initialiseert en importeert scigame module
-exec("scigame/__init__.sce");
+exec("scigame/init.sce");
 exec("logic.sce");
 
 function main()
@@ -7,11 +7,11 @@ function main()
 	window = Window([800, 600]);
 	
 	// laad een afbeelding in een variabele
-	// image = load_image(pathfile, [x, y, breedte, hoogte])
-	bg = load_image("img/background.png", [0, 0, 800, 600]);
-	ball = load_image("img/ball.png", [384, 284, 32, 32]);
-	stick_player = load_image("img/stick.png", [718, 260, 64, 128]);
-	stick_scibot = load_image("img/stick.png", [30, 260, 64, 128]);
+	// image = Image(pathfile, [x, y, breedte, hoogte])
+	bg = Image("img/background.png", [0, 0, 800, 600]);
+	ball = Image("img/ball.png", [384, 284, 32, 32]);
+	stick_player = Image("img/stick.png", [718, 260, 64, 128]);
+	stick_scibot = Image("img/stick.png", [30, 260, 64, 128]);
 	
 	// maak een sprite object aan,
 	// sprite is een extend image object met meer methodes zoals
